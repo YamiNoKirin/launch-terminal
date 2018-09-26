@@ -18,4 +18,5 @@ Add your __application__ to the list of apps with assistive access. Otherwise, i
 - Set a __unique__ keybind! Anything that is being used by a different app will render yours useless
 - I personally chose cmd+f3, it does not seem to be in use and is relatively comfortable to use
 - I only tested this on High Sierra, I do not know if it works on older versions of OSX
-- I added source code to `/src` in case you want to create the services via Automator yourself
+- I added source code to `/src` in case you want to create the app via Automator yourself
+- The service is just a blank service with a 'Launch Application' that launches our app

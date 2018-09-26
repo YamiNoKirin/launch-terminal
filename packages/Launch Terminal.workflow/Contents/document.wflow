@@ -20,45 +20,46 @@
 					<key>Optional</key>
 					<true/>
 					<key>Types</key>
-					<array>
-						<string>com.apple.applescript.object</string>
-					</array>
+					<array/>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>1.0.2</string>
+				<string>1.1.1</string>
 				<key>AMApplication</key>
 				<array>
-					<string>Automator</string>
+					<string>Finder</string>
 				</array>
 				<key>AMParameterProperties</key>
 				<dict>
-					<key>source</key>
-					<dict/>
+					<key>appPath</key>
+					<dict>
+						<key>isPathPopUp</key>
+						<true/>
+						<key>variableUUIDsInMenu</key>
+						<array/>
+					</dict>
 				</dict>
 				<key>AMProvides</key>
 				<dict>
 					<key>Container</key>
 					<string>List</string>
 					<key>Types</key>
-					<array>
-						<string>com.apple.applescript.object</string>
-					</array>
+					<array/>
 				</dict>
 				<key>ActionBundlePath</key>
-				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<string>/System/Library/Automator/Launch Application.action</string>
 				<key>ActionName</key>
-				<string>Run AppleScript</string>
+				<string>Launch Application</string>
 				<key>ActionParameters</key>
 				<dict>
-					<key>source</key>
-					<string>tell application "Launch Terminal.app" to activate</string>
+					<key>appPath</key>
+					<string>/Applications/Launch Terminal.app</string>
 				</dict>
 				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.RunScript</string>
+				<string>com.apple.Automator.OpenApplication</string>
 				<key>CFBundleVersion</key>
-				<string>1.0.2</string>
+				<string>1.1.1</string>
 				<key>CanShowSelectedItemsWhenRun</key>
-				<false/>
+				<true/>
 				<key>CanShowWhenRun</key>
 				<true/>
 				<key>Category</key>
@@ -66,34 +67,30 @@
 					<string>AMCategoryUtilities</string>
 				</array>
 				<key>Class Name</key>
-				<string>RunScriptAction</string>
+				<string>AMLaunchApplicationAction</string>
 				<key>InputUUID</key>
-				<string>ACE6D19D-3063-489A-93A6-2FE7B2B323B2</string>
+				<string>6D4C07F0-6A18-442D-BBA7-3D076A6916C6</string>
 				<key>Keywords</key>
 				<array>
-					<string>Run</string>
+					<string>File</string>
+					<string>Open</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>7159270F-E089-4DB4-942F-5F5B4293F917</string>
+				<string>8AC5DB58-D84A-4E0D-8E70-7ECE380B3561</string>
 				<key>UUID</key>
-				<string>AA9C2BFF-2479-416D-BBB6-8A08C154639D</string>
+				<string>D379C700-F7C5-4ADA-B5E1-2A3C73D541E6</string>
 				<key>UnlocalizedApplications</key>
 				<array>
-					<string>Automator</string>
+					<string>Finder</string>
 				</array>
 				<key>arguments</key>
 				<dict>
 					<key>0</key>
 					<dict>
 						<key>default value</key>
-						<string>on run {input, parameters}
-	
-	(* Your script goes here *)
-	
-	return input
-end run</string>
+						<string>/Applications/Contacts.app</string>
 						<key>name</key>
-						<string>source</string>
+						<string>appPath</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -102,12 +99,14 @@ end run</string>
 						<string>0</string>
 					</dict>
 				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.000000:316.000000</string>
+				<string>281.000000:173.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+				<string>/System/Library/Automator/Launch Application.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
